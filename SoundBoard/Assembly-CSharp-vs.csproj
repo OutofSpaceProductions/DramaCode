@@ -46,8 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scipts\ButtonSliderColor.cs" />
      <Compile Include="Assets\Scipts\GameObjectSounds.cs" />
      <Compile Include="Assets\Scipts\UISript.cs" />
+     <Compile Include="Assets\Scipts\fadeInButton.cs" />
      <Compile Include="Assets\Scipts\gameManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
