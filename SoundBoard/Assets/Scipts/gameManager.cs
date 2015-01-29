@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class gameManager : MonoBehaviour {
 
-	// Use this for initialization
+	public Slider volume;
+
 	void Start () {
 	
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update () 
+	{
+
 	}
 }
