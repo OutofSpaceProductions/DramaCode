@@ -5,22 +5,25 @@ using System.Collections;
 public class fadeInButton : MonoBehaviour 
 {
 	public bool fadeIn = true;
-	public Slider fadeInSlider;
+	public GameObject Music;
+	public Text fadeTimeValue;
+	float FadeTime;
+
+
+	void Start()
+	{
+		gameObject.SetActive(true);
+	}
 
 	void Update()
 	{
-		if(fadeIn == true)
-		{
-			fadeInSlider.value = 1;
-		}
-		if(fadeIn == false)
-		{
-			fadeInSlider.value = 0;
-		}
+		FadeTime = float.Parse(fadeTimeValue.text);
 	}
+
+
 	public void Clicked()
 	{
-		Debug.Log("FadeIN");
-		fadeIn = !fadeIn;
+		Music.SendMessage("WaitNFaid",FadeTime, SendMessageOptions.DontRequireReceiver);
+
 	}
 }

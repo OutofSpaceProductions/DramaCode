@@ -14,7 +14,7 @@ public class ButtonSliderColor : MonoBehaviour {
 
 	void Update () 
 	{
-		if(fadeScript.fadeIn = true)
+		if(fadeScript.fadeIn == true)
 		{
 			GetComponent<Image>().color = Color.green;
 		}
