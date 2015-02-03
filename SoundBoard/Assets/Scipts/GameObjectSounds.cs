@@ -8,6 +8,7 @@ public class GameObjectSounds : MonoBehaviour {
 	public Color activeColor;
 	public Color notActiveColor;
 	public bool clicked = false;
+	bool fadeIn = false;
 
 	Animator anim;
 
@@ -27,19 +28,36 @@ public class GameObjectSounds : MonoBehaviour {
 		{
 			audio.Play();
 		}
-		if(Input.GetKeyDown(KeyCode.F))
+		/*if(fadeIn == true)
 		{
-			SendMessage("F", SendMessageOptions.DontRequireReceiver);
+			StartCoroutine(fadeInFunction());
 		}
+		*/
 	}
 
-	void WaitNFaid (float fadeTime)
+	/*IEnumerator fadeInFunction ()
 	{
-		Debug.Log(audio.volume);
-		audio.volume = Mathf.Lerp(audio.volume, 0.0f, fadeTime);
+		yield return new WaitForSeconds(1f);
+		anim.SetBool("Fade Out", true);
+		clicked = false;
 	}
 
-	/*public IEnumerator Fade ()
+	void WaitNFaid ()
+	{
+		if(audio.volume > 0.0f)
+		{
+		audio.volume = Mathf.Lerp(audio.volume, 0.0f, fadeTime);
+		if(audio.volume == 0.0f)
+				break;
+		}
+
+
+		anim.SetBool("Fade Out", true);
+		fadeIn = true;
+
+	}
+
+	public IEnumerator Fade ()
 	{
 		Debug.Log("Waiting ");
 		//anim.SetBool("Fade", true);

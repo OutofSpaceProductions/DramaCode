@@ -17,13 +17,22 @@ public class fadeInButton : MonoBehaviour
 
 	void Update()
 	{
-		FadeTime = float.Parse(fadeTimeValue.text);
+		/*
+		 if(fadeTimeValue != null)
+		{
+			FadeTime = float.Parse(fadeTimeValue.text);
+		}
+		else
+		{
+			FadeTime = 1;
+		}
+		*/
 	}
 
 
 	public void Clicked()
 	{
-		Music.SendMessage("WaitNFaid",FadeTime, SendMessageOptions.DontRequireReceiver);
+		//Music.SendMessage("WaitNFaid", SendMessageOptions.DontRequireReceiver);
 
 	}
 }
