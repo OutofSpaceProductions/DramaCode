@@ -28,11 +28,11 @@ public class GameObjectSounds : MonoBehaviour {
 		{
 			audio.Play();
 		}
-		/*if(fadeIn == true)
+		if(GameManager.volume.value <= 0.026f)
 		{
-			StartCoroutine(fadeInFunction());
+			clicked = false;
+			GetComponent<Image>().color = notActiveColor;
 		}
-		*/
 	}
 
 	/*IEnumerator fadeInFunction ()
@@ -67,6 +67,10 @@ public class GameObjectSounds : MonoBehaviour {
 
 	public void Clicked()
 	{
+		if(Input.touchCount == 2)
+		{
+			Debug.Log("Play Sound 2");
+		}
 		clicked = !clicked;
 		if(clicked == true)
 		{

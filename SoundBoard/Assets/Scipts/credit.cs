@@ -6,6 +6,7 @@ public class credit : MonoBehaviour {
 
 	public GameObject creditGameObject;
 	bool showCredits = false;
+	gameManager GameManager;
 
 	void Start()
 	{

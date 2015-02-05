@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scipts/credit.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scipts/fadeInButton.cs">
     <Files>
-      <File FileName="Assets/Scipts/credit.cs" Line="19" Column="35" />
-      <File FileName="Assets/Scipts/fadeInButton.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scipts/GameObjectSounds.cs" Line="35" Column="3" />
+      <File FileName="Assets/Scipts/credit.cs" Line="13" Column="37" />
+      <File FileName="Assets/Scipts/fadeInButton.cs" Line="21" Column="58" />
+      <File FileName="Assets/Scipts/GameObjectSounds.cs" Line="7" Column="1" />
       <File FileName="Assets/Scipts/ButtonSliderColor.cs" Line="17" Column="26" />
+      <File FileName="Assets/Scipts/gameManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

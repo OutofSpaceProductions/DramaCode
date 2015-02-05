@@ -5,34 +5,42 @@ using System.Collections;
 public class fadeInButton : MonoBehaviour 
 {
 	public bool fadeIn = true;
-	public GameObject Music;
-	public Text fadeTimeValue;
-	float FadeTime;
+	public Slider fadeTimeValue;
+	public Text fadeTimeText;
+	public float FadeTime;
+	gameManager GameManager;
 
+	bool fading = false;
 
 	void Start()
 	{
-		gameObject.SetActive(true);
+		GameObject gameController = GameObject.FindGameObjectWithTag("GameController");
+		GameManager = gameController.GetComponent<gameManager>();
 	}
 
 	void Update()
 	{
-		/*
-		 if(fadeTimeValue != null)
+		Debug.Log(GameManager.volume.value);
+		fadeTimeValue.value = Mathf.Round(fadeTimeValue.value);
+		fadeTimeText.text = "" + fadeTimeValue.value;
+
+		if(fading == true)
 		{
-			FadeTime = float.Parse(fadeTimeValue.text);
+			GameManager.volume.value = Mathf.Lerp(GameManager.volume.value, 0.0f, fadeTimeValue.value * Time.deltaTime);
 		}
-		else
+		if(GameManager.volume.value <= 0.025f)
 		{
-			FadeTime = 1;
+			fading = false;
+			GameManager.volume.value = 1;
 		}
-		*/
+
 	}
+
 
 
 	public void Clicked()
 	{
-		//Music.SendMessage("WaitNFaid", SendMessageOptions.DontRequireReceiver);
-
+		fading = true;
 	}
+
 }

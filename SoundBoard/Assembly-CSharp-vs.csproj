@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ChangeColor.cs" />
      <Compile Include="Assets\Scipts\ButtonSliderColor.cs" />
      <Compile Include="Assets\Scipts\GameObjectSounds.cs" />
      <Compile Include="Assets\Scipts\UISript.cs" />
