@@ -23,11 +23,14 @@ public class GameObjectSounds : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+
 		audio.volume = GameManager.volume.value;
+
 		if(clicked == false)
 		{
 			audio.Play();
 		}
+
 		if(GameManager.volume.value <= 0.026f)
 		{
 			clicked = false;

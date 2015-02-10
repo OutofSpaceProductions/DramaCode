@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scipts\ButtonSliderColor.cs" />
      <Compile Include="Assets\Scipts\GameObjectSounds.cs" />
      <Compile Include="Assets\Scipts\UISript.cs" />
+     <Compile Include="Assets\Scipts\cameraAudio.cs" />
      <Compile Include="Assets\Scipts\credit.cs" />
      <Compile Include="Assets\Scipts\fadeInButton.cs" />
      <Compile Include="Assets\Scipts\gameManager.cs" />
